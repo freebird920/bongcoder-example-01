@@ -9,4 +9,8 @@
       @apply font-bold select-none border-2 rounded-md p-1 hover:bg-neutral-500 hover:bg-opacity-25;
     }
   }
+
+  .PostForm{
+    @apply w-full;
+  }
 }

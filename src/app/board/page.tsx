@@ -10,7 +10,7 @@ export default function BoardPage() {
   const [postList, setPostList] = useState<PostType[]>([]);
   const onSubmitHandler = useCallback((event: FormEvent) => {
     event.preventDefault();
-    const formElement = event.currentTarget as HTMLFormElement
+    const formElement = event.currentTarget as HTMLFormElement;
     const formData = new FormData(formElement);
     const userName = formData.get("name");
     const inputText = formData.get("inputText");
@@ -23,34 +23,42 @@ export default function BoardPage() {
       typeof inputText !== "string" ||
       typeof postDate !== "string"
     ) {
-        return alert("이름이나 내용 없음.");
+      return alert("이름이나 내용 없음.");
     }
     const result: PostType = {
-        name: userName,
-        text: inputText,
-        date: postDate
+      name: userName,
+      text: inputText,
+      date: postDate,
     };
     // Create a new array with the new post
     setPostList((prevPostList) => [...prevPostList, result]);
     formElement.reset();
-}, []);
+  }, []);
 
   return (
     <>
       <h1>방명록</h1>
-      <form onSubmit={onSubmitHandler}>
-        <label htmlFor="name">이름</label>
-        <input id="name" name="name" />
-        <label htmlFor="date">날짜</label>
-        <input
-          id="date"
-          name="date"
-          readOnly={true}
-          defaultValue={new Date().toLocaleString("ko-KR")}
-        />
-        <label htmlFor="inputText">내용</label>
-        <textarea id="inputText" name="inputText" />
-
+      <form
+        className="border-2 p-2 rounded-md flex-col"
+        onSubmit={onSubmitHandler}
+      >
+        <section>
+          <label htmlFor="name">이름</label>
+          <input id="name" name="name" />
+        </section>
+        <section>
+          <label htmlFor="date">날짜</label>
+          <input
+            id="date"
+            name="date"
+            readOnly={true}
+            defaultValue={new Date().toLocaleString("ko-KR")}
+          />
+        </section>
+        <section>
+          <label htmlFor="inputText">내용</label>
+          <textarea id="inputText" name="inputText" />
+        </section>
         <button type="submit">등록</button>
       </form>
       {postList.length > 0 &&
