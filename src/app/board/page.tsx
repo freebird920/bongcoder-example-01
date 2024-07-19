@@ -39,7 +39,7 @@ export default function BoardPage() {
     <>
       <h1>방명록</h1>
       <form
-        className="border-2 p-2 rounded-md flex-col"
+        className="PostForm border-2 space-y-2 p-2 rounded-md flex-col"
         onSubmit={onSubmitHandler}
       >
         <section>
@@ -57,15 +57,15 @@ export default function BoardPage() {
         </section>
         <section>
           <label htmlFor="inputText">내용</label>
-          <textarea id="inputText" name="inputText" />
+          <textarea id="inputText" name="inputText" className="border-2 rounded-md p-2" />
         </section>
-        <button type="submit">등록</button>
+        <button className="border-2 w-full rounded-md p-2 hover:bg-rose-500 hover:bg-opacity-20" type="submit">등록</button>
       </form>
       {postList.length > 0 &&
         postList
           .map((post: PostType, index: number) => {
             return (
-              <section key={index}>
+              <section key={`post-${index}`}>
                 <p>{index + 1}</p>
                 <p>이름: {post.name}</p>
                 <p>날짜: {post.date}</p>
