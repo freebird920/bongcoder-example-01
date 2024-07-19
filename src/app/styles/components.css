@@ -1,0 +1,12 @@
+@tailwind components;
+
+@layer components {
+  .Navbar {
+    ul {
+      @apply flex space-x-2 my-4 justify-center;
+    }
+    a {
+      @apply font-bold select-none border-2 rounded-md p-1 hover:bg-neutral-500 hover:bg-opacity-25;
+    }
+  }
+}
