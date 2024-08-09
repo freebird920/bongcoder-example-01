@@ -1,7 +1,5 @@
 # 봉우리코더 2024 여름방학 숙제
 
-
-
 1. [프로젝트 생성](#1-프로젝트-생성)
 1. [프로젝트 세팅](#2-프로젝트-세팅)
 1. [페이지 라우팅](#3-페이지-라우팅)
@@ -73,7 +71,7 @@ export defualt function HomePage(){
 
 ### 3. 페이지 라우팅
 
-파일 트리
+**파일 트리**
 - ./src/app/
     - ./src/app/components
         - Navbar.tsx
@@ -131,5 +129,52 @@ export defualt function BoardPage(){
         
         </>
     )
+}
+```
+
+### Navbar.tsx 
+
+**커스텀 컴포넌트** 만들고 사용하기.
+
+**./src/app/components/Navbar.tsx**
+```tsx
+// Navbar.tsx
+export default function Navbar(){
+    return(
+        <nav>
+            <a href="/">Home</a>
+            <a href="/family">Family</a>
+            {/* Board 링크도 직접 만들어본다. */}
+        </nav>
+    )
+}
+```
+
+**./src/app/layout.tsx**
+
+```tsx
+import type { Metadata } from "next";
+import "./styles/globals.css";
+import Navbar from "./components/Navbar"; // 위에서 만든 Navbar를 import한다.
+
+export const metadata: Metadata = {
+  title: "타이틀", // 내가 쓰고 싶은 홈페이지 타이틀을 쓴다.
+  description: "봉코더 여름방학 과제",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className="container mx-auto">
+        {/* 아래와 같이 Navbar를 삽입한다. */}
+        <Navbar /> 
+        {children}
+      </body>
+    </html>
+  );
 }
 ```
