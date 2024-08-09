@@ -60,7 +60,9 @@ export defualt function HomePage(){
     // 여기에 typescript 코드를 작성한다.
     return(
         <>
-        // 여기에 HTML 코드를 작성한다.
+
+        {/* 여기에 HTML 코드를 작성한다. */}
+        
         </>
     )
 }

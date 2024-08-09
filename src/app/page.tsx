@@ -12,6 +12,7 @@ export default function HomePage() {
         <p>취미: 프로그래밍</p>
         <p>좌우명: React is the best.</p>
       </section>
+      
     </>
   );
 }
