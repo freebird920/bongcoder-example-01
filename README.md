@@ -2,7 +2,10 @@
 
 
 
-[프로젝트 생성](#1-프로젝트-생성)
+1. [프로젝트 생성](#1-프로젝트-생성)
+1. [프로젝트 세팅](#2-프로젝트-세팅)
+1. [페이지 라우팅](#3-페이지-라우팅)
+
 ## (숙제)나만의 홈페이지 제작
 
 
@@ -57,6 +60,69 @@ ctrl + o + k 를 입력하여 만들어진 프로젝트 폴더를 연다. (예�
 해당 파일의 내용을 모두 삭제 하고 아래와 같이 빈 page를 만든다.
 ```tsx
 export defualt function HomePage(){
+    // 여기에 typescript 코드를 작성한다.
+    return(
+        <>
+
+        {/* 여기에 HTML 코드를 작성한다. */}
+        
+        </>
+    )
+}
+```
+
+### 3. 페이지 라우팅
+
+파일 트리
+- ./src/app/
+    - ./src/app/components
+        - Navbar.tsx
+    - ./src/app/family
+        - page.tsx
+    - ./src/app/board
+        - page.tsx
+    - page.tsx
+    - layout.tsx
+    - globals.tsx
+
+
+<br/>
+
+**./src/app/family/page.tsx**는 아래와 같이 만든다. 
+```tsx
+export defualt function FamilyPage(){
+    // 여기에 typescript 코드를 작성한다.
+    return(
+        <>
+
+        {/* 여기에 HTML 코드를 작성한다. */}
+        
+        </>
+    )
+}
+```
+<br/>
+
+**Navbar.tsx**는 아래와 같이 만든다. 
+```tsx
+export defualt function Navbar(){
+    // 여기에 typescript 코드를 작성한다.
+    return(
+        <>
+
+        {/* 여기에 HTML 코드를 작성한다. */}
+        
+        </>
+    )
+}
+```
+
+<br/>
+
+**./src/app/board/page.tsx**는 아래와 같이 ```"use client"```를 써서 client component로 만든다.
+```tsx
+"use client"
+export defualt function BoardPage(){
     // 여기에 typescript 코드를 작성한다.
     return(
         <>
