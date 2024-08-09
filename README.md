@@ -10,7 +10,6 @@
 터미널을 열고 아래 명령어를 입력한다. 
 ```bash
 npx create-next-app@latest
-
 ```
 
 명령어를 입력한 후 아래와 같이 
@@ -40,3 +39,7 @@ Success! Created my-project at C:\projects\my-project
 ```
 
 ctrl + o + k 를 입력하여 만들어진 프로젝트 폴더를 연다. (예사와 같이 만들었다면 C:\projects\my-project 이 폴더를 연다.)
+
+
+### 2. 프로젝트 세팅.
+```src/app```의 ```globals.css```를  
