@@ -13,6 +13,9 @@ const Navbar = memo(() => {
         <li>
             <a href = "/board">방명록</a>
         </li>
+        <li>
+          <a href="https://github.com/freebird920/bongcoder-example-01" target="none">깃허브</a>
+        </li>
       </ul>
     </nav>
   );
