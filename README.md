@@ -42,4 +42,26 @@ ctrl + o + k 를 입력하여 만들어진 프로젝트 폴더를 연다. (예�
 
 
 ### 2. 프로젝트 세팅.
-```src/app```의 ```globals.css```를  
+
+#### CSS tailwind 세팅
+```src/app```의 ```globals.css```에 **아래 코드를 남기고** 모두 삭제한다.
+
+```css
+/* ./src/app/globals.css */
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+```
+
+#### ./src/app/page.tsx 세팅
+
+```tsx
+export defualt function HomePage(){
+    // 여기에 typescript 코드를 작성한다.
+    return(
+        <>
+        // 여기에 HTML 코드를 작성한다.
+        </>
+    )
+}
+```
