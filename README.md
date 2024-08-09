@@ -29,7 +29,7 @@ Ok to proceed? (y) y
 √ Would you like to use Tailwind CSS? ... No / Yes  // Yes
 √ Would you like to use `src/` directory? ... No / Yes  // Yes
 √ Would you like to use App Router? (recommended) ... No / Yes  // Yes
-√ Would you like to customize the default import alias (@/*)? ... No / Yes  // Yes
+√ Would you like to customize the default import alias (@/*)? ... No / Yes  // No
 Creating a new Next.js app in C:\projects\my-project.
 ```
 
