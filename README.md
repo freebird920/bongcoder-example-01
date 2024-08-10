@@ -138,6 +138,15 @@ export default function BoardPage(){
 **커스텀 컴포넌트** 만들고 사용하기.
 
 **./src/app/components/Navbar.tsx**
+
+- ```<nav></nav>```태그는 내비게이션 바를 나타내는 시멘틱 코드이다. 
+- ```<a></a>``` 태그는 하이퍼링크를 나타내는 html 코드이다. 
+    - ```<a href="url">*화면에 보여줄 하이퍼링크*</a>``` 
+    - url에 절대 주소를 넣을 수도 있고 상대주소를 넣을 수도 있다. 절대 주소는 외부 링크에 쓴다.
+    - 상대주소는 내 사이트의 상대 주소로 ```localhost:3000/home/myhome```과 같은 주소에서 localhost:3000 다음에 나오는 문자열, 그러니까 ```/home/myhome```과 같이 입력하면 된다. 참고로 홈페이지는 ```/```이다.
+    - 링크를 클릭할 때 새창으로 띄우려면 ```target="none"```을 추가한다. (예시 ```<a href="http://www.naver.com" target="none">네이버링크</a>```)
+
+
 ```tsx
 // Navbar.tsx
 export default function Navbar(){
@@ -179,3 +188,7 @@ export default function RootLayout({
   );
 }
 ```
+
+### 5. ./src/app/page.tsx (홈화면)
+**이미지 넣기**
+img src 
