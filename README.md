@@ -190,5 +190,8 @@ export default function RootLayout({
 ```
 
 ### 5. ./src/app/page.tsx (홈화면)
-**이미지 넣기**
-img src 
+**HTML IMG 태그 ```<img/>```**
+- ```<img/>``` 태그는 html 태그로 그림을 넣을 때 사용한다. 
+- 그림의 주소를 ```<img src="주소"/>```와 같이 ```src="주소"```와 같이 입력한다.
+- 그림의 주소가 외부링크일 경우 이미지의 주소를 입력하면 된다. (예시) ```<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg5eHw6MFKUmkfySbkwtjvDTLSu7hyy4aG25eOXNEu3fWn9EAH3XGZKfAdHlROpWUAU2h-cJZZXZx_p4tmYr-Uj8rvD5f8cLUeq8mhdZFPdbiHZRc7rBOEe2pz76d3bF7YZyUFFHOHglckQ/s450/hikouki_kinai.png"/>```
+- 그림을 내 사이트에 직접 넣고싶으면 ```./public```폴더 안에 그림 파일을 넣는다. 예를 들어 ```./public```폴더 안에 넣은 그림파일의 이름이 myimg.png라면 ```<img src="/public/myimg.png"/>```와 같이 추가한다.
