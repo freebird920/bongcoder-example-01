@@ -58,7 +58,7 @@ ctrl + o + k 를 입력하여 만들어진 프로젝트 폴더를 연다. (예�
 #### ./src/app/page.tsx 세팅
 해당 파일의 내용을 모두 삭제 하고 아래와 같이 빈 page를 만든다.
 ```tsx
-export defualt function HomePage(){
+export default function HomePage(){
     // 여기에 typescript 코드를 작성한다.
     return(
         <>
@@ -89,7 +89,7 @@ export defualt function HomePage(){
 
 **./src/app/family/page.tsx**는 아래와 같이 만든다. 
 ```tsx
-export defualt function FamilyPage(){
+export default function FamilyPage(){
     // 여기에 typescript 코드를 작성한다.
     return(
         <>
@@ -104,7 +104,7 @@ export defualt function FamilyPage(){
 
 **Navbar.tsx**는 아래와 같이 만든다. 
 ```tsx
-export defualt function Navbar(){
+export default function Navbar(){
     // 여기에 typescript 코드를 작성한다.
     return(
         <>
@@ -121,7 +121,7 @@ export defualt function Navbar(){
 **./src/app/board/page.tsx**는 아래와 같이 ```"use client"```를 써서 client component로 만든다.
 ```tsx
 "use client"
-export defualt function BoardPage(){
+export default function BoardPage(){
     // 여기에 typescript 코드를 작성한다.
     return(
         <>
