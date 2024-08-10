@@ -155,7 +155,7 @@ export default function Navbar(){
 
 ```tsx
 import type { Metadata } from "next";
-import "./styles/globals.css";
+import "./globals.css";
 import Navbar from "./components/Navbar"; // 위에서 만든 Navbar를 import한다.
 
 export const metadata: Metadata = {
